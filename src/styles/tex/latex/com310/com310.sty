@@ -1,0 +1,28 @@
+%! Package = com310
+%! Author = Len Washington III
+%! Date = 12/26/23
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{com310}[2023/12/26 A styling package for the class: ]
+
+\RequirePackage{kvoptions}
+
+\SetupKeyvalOptions{
+	family=com,
+	prefix=com@
+}
+
+\DeclareStringOption{title}
+\DeclareStringOption[{Len Washington~III}]{author}
+\DeclareStringOption[{\today}]{date}
+\DeclareStringOption[{The Human Voice: Description{,} Analysis and Application}]{subject}
+\DeclareStringOption[COM~310]{subjectCode}
+
+\ProcessKeyvalOptions*
+
+\RequirePackage[author=\com@author,
+	title=\com@title,
+	date={\com@date},
+	subject=\com@subject,
+	code=\com@subjectCode
+]{iitacademics}
