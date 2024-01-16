@@ -8,7 +8,7 @@
       <viewer-command>pdfopener</viewer-command>
       <compiler-arguments />
       <envs />
-      <main-file>$PROJECT_DIR$/src/labs/washington_lab_1.tex</main-file>
+      <main-file>$PROJECT_DIR$/src/labs/washington_lab1.tex</main-file>
       <output-path>$PROJECT_DIR$/out/lab</output-path>
       <auxil-path>$PROJECT_DIR$/auxil/lab</auxil-path>
       <compile-twice>false</compile-twice>

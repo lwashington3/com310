@@ -16,6 +16,7 @@
 
 \DeclareStringOption{title}
 \DeclareStringOption{lab}
+\DeclareBoolOption[false]{turnin}
 
 \ProcessKeyvalOptions*
 
@@ -29,22 +30,61 @@
 	\textbf{\com@title}
 \end{center}}
 
-\NewEnviron{overview}{
-	\textbf{Overview.}
-	\noindent\BODY
+\ifcomlab@turnin
+	\NewEnviron{overview}{}
+	\NewEnviron{problem}{}
+	\NewEnviron{task}{}	
+	\NewEnviron{writeup}{}
+\else
+	\NewEnviron{overview}{
+		\textbf{Overview.}
+		\BODY\\
+	}
+	
+	\NewEnviron{problem}{
+		\textbf{Problem.}
+		\BODY\\
+	}
+	
+	\NewEnviron{task}{
+		\textbf{Task.}
+		\BODY\\
+	}
+	
+	\NewEnviron{writeup}{
+		\textbf{Write up report.}
+		\BODY\\
+	}
+\fi
+
+\newcommand{\labtitle}{\textbf{Title: \com@title, by \com@author}\\}
+
+\NewEnviron{topic}{
+	\textbf{Topic.}
+	\BODY\\
 }
 
-\NewEnviron{problem}{
-	\textbf{Problem.}
-	\noindent\BODY
+\NewEnviron{issue}{
+	\textbf{Issue.}
+	\BODY\\
 }
 
-\NewEnviron{task}{
-	\textbf{Task.}
-	\noindent\BODY
+\NewEnviron{hypothesis}{
+	\textbf{Hypothesis.}
+	\BODY\\
 }
 
-\NewEnviron{writeup}{
-	\textbf{Write up report.}
-	\noindent\BODY
+\NewEnviron{method}{
+	\textbf{Method.}
+	\BODY\\
+}
+
+\NewEnviron{results}{
+	\textbf{Results.}
+	\BODY
+}
+
+\NewEnviron{discussion}{
+	\textbf{Discussion.}
+	\BODY\\
 }

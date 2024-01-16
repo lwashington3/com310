@@ -2,7 +2,7 @@
 %! Date = 1/15/24
 
 % Preamble
-\documentclass[lab=1,title={Speaking rate}]{com310lab}
+\documentclass[lab=1,title={Speaking rate},turnin=false]{com310lab}
 \usepackage{amsmath}
 
 % Document
@@ -16,7 +16,7 @@
 	In contrast, speech from the urban North East is sometimes described as fast and under-articulated.
 	In addition, the speech of women is often described as faster, compared to the speech of men.
 	This claim about gender differences in speaking rate is seen not only in popular accounts of speech, but also in supposedly academic publications, e.g. Brizendine (2007), The Female Brain.
-	(All of these claims, by the way, turn out to be false, but that’s another matter).\\
+	(All of these claims, by the way, turn out to be false, but that’s another matter).
 \end{overview}
 
 
@@ -34,7 +34,7 @@
 
 	In theory, both methods should yield similar results: speech found to be fast using one method should also be seen as fast using the other.
 	Your job is to determine whether this expectation is true and explain why.
-\end{problem}\\
+\end{problem}
 
 \begin{task}
 	Record the paragraph below using any voice recorder app.
@@ -70,10 +70,58 @@
 	Summarize the results, and address the problem raised above, namely whether measures of speaking rates are consistent.
 	If you find any differences, use the data to offer an explanation.
 	(Hint: the measures are unlikely to be consistent with each other).
-\end{task}\\
+\end{task}
 
 \begin{writeup}
 	Follow the format for writing up phonetics lab reports and turn in your report on the day it is due.
 \end{writeup}
+
+\pagebreak
+
+\labtitle
+
+\begin{topic}
+	Topic
+\end{topic}
+
+\begin{issue}
+	Issue
+\end{issue}
+
+\begin{hypothesis}
+	Hypothesis
+\end{hypothesis}
+
+\begin{method}
+	Method
+\end{method}
+
+\begin{results}
+	Results
+
+	\makebox[1 \textwidth][c]{
+		\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1\textwidth}}
+			\begin{threeparttable}
+				\caption{Results from the Lab}
+				\label{tab:data}
+				\include{washington_lab1_table}
+%				\begin{tablenotes}
+%					\small
+%					\item
+%				\end{tablenotes}
+			\end{threeparttable}
+	}
+
+	\begin{figure}[H]
+		\centering
+		\caption{A scatter plot showing the words per minutes against the syllables per second of \hyperref[tab:data]{sentences} 1--6.}
+		\label{fig:results}
+		\includegraphics[width=\textwidth]{washington_lab1_graph}
+	\end{figure}
+\end{results}
+
+\begin{discussion}
+	Discussion
+\end{discussion}
 
 \end{document}
