@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Lab 1" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Labs">
+  <configuration default="false" name="January 9, 2024 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="January Notes">
     <texify>
       <compiler>PDFLATEX</compiler>
       <compiler-path />
@@ -8,9 +8,9 @@
       <viewer-command>pdfopener</viewer-command>
       <compiler-arguments />
       <envs />
-      <main-file>$PROJECT_DIR$/src/labs/lab1_speaking_rate/washington_lab1.tex</main-file>
-      <output-path>$PROJECT_DIR$/out/labs</output-path>
-      <auxil-path>$PROJECT_DIR$/auxil/labs</auxil-path>
+      <main-file>$PROJECT_DIR$/src/notes/1-09-2024.tex</main-file>
+      <output-path>$PROJECT_DIR$/out/notes</output-path>
+      <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
       <compile-twice>false</compile-twice>
       <output-format>PDF</output-format>
       <latex-distribution>MIKTEX</latex-distribution>

@@ -1,0 +1,87 @@
+%! Author = Len Washington III
+%! Date = 1/8/24
+%! compiler = pdflatex
+
+% Preamble
+\documentclass[title={January 9{,} 2024 Notes}]{com310notes}
+
+% Packages
+
+% Document
+\begin{document}
+
+\maketitle
+\newcommand{\z}[1]{#1 \textcolor{red}{z}}
+\newcommand{\s}[1]{#1 \textcolor{blue}{s}}
+\newcommand{\neither}[1]{\textcolor{green}{#1}}
+\let\oldt\t
+\let\oldd\d
+\renewcommand{\t}[1]{#1 \textcolor{red}{t}}
+\renewcommand{\d}[1]{#1 \textcolor{blue}{d}}
+\newcommand{\id}[1]{#1 \textcolor{orange}{id}}
+
+\begin{table}[H]
+    \centering
+    \begin{threeparttable}
+		\caption{\begin{minipage}{\textwidth}List of 1 syllable animals plualized ending\end{minipage}}
+		\label{tab:animals-plural}
+		\begin{tabular}{|c  c  c|}
+			\hline
+			\z{frog} & \z{cow} & \z{fly}\\
+			\s{rat} & \z{bird} & \s{wasp}\\
+			\z{dog} & \s{goat} & \z{bee}\\
+			\s{cat} & \z{hen} & \s{ape}\\
+			\s{bat} & \z{lion} & \s{ant}\\
+			\z{pig} & \z{bug} & \z{crow}\\
+			\z{whale} &   & \s{hawk}\\
+			\s{snake} & \z{ram} & \s{sloth}\\
+			\z{bear} & \z{seal} & \z{snail}\\
+			\hline
+		\end{tabular}
+		\begin{tablenotes}
+			\small
+			\item
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+\noindent The key is if your vocal cords (aka vocal folds) vibrate on the last sound of the word.
+If it vibrates, it will sound like a `z,' if it doesn't, it will sound like an `s'.
+
+\noindent The only exception to this rule is if the last sound is
+\begin{itemize}
+	\item sh (like wish)
+	\item ss (like hiss)
+	\item zz (like fuzz)
+	\item ge/je (like fudge)
+\end{itemize}
+which would end in `iz'.
+
+\begin{table}[H]
+	\centering
+	\begin{threeparttable}
+		\caption{\begin{minipage}{\textwidth}List of 1 syllable past-tense ending\end{minipage}}
+		\label{tab:past-tense}
+		\begin{tabular}{|c  c|}
+			\hline
+			\t{walk} & \id{greet}\\
+			\d{beg} & \id{pat}\\
+			\d{tee} & \id{pad}\\
+			\d{grin} & \t{sniff}\\
+			\d{grill} & \d{starve}\\
+			\d{snow} & \d{wheel}\\
+			\t{fuss} & \d{tow}\\
+			& \d{buzz}\\
+			\hline
+		\end{tabular}
+		\begin{tablenotes}
+			\small
+			\item
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+\let\t\oldt
+\let\d\oldd
+
+\end{document}

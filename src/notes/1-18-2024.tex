@@ -1,0 +1,65 @@
+%! Author = Len Washington III
+%! Date = 1/18/24
+%! compiler = pdflatex
+
+% Preamble
+\documentclass[title={}]{com310notes}
+
+% Packages
+
+% Document
+\begin{document}
+
+\maketitle
+
+\begin{table}[H]
+    \centering
+    \begin{threeparttable}
+		\caption{}
+		\label{tab:}
+		\begin{tabular}{|c  c  c  c|}
+			\hline
+			& \textbf{voicing} & \textbf{place of articulation (poa)} & \textbf{manner}\\
+			\hline
+			b: & voiced & bilabial & stop\\
+			p: & voiceless & bilabial & stop\\
+			m: & voiced & bilabial & nasal\\
+			f: & voiceless & lab-dental & fricatives\\
+			v: & voiced & lab-dental & fricatives\\
+			\hline
+		\end{tabular}
+		\begin{tablenotes}
+			\small
+			\item
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+\newcommand{\stopcon}[1]{\textcolor{red}{#1}}% Stop consonants
+
+\begin{table}[H]
+    \centering
+    \begin{threeparttable}
+		\caption{}
+		\label{tab:}
+		\rowcolors{2}{black!30}{white}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+			\hline
+			& \textbf{lips} & \textbf{lab-dental} & \textbf{dental} & \textbf{alv} & \textbf{post-alv} & \textbf{palatul} & \textbf{velar} & \textbf{glottal}\\
+			\hline
+			Stops & \stopcon{p} \stopcon{b} & & & \stopcon{t} \stopcon{d} & & & \stopcon{k} \stopcon{g} & \stopcon{uh} \stopcon{oh}\\
+			Nasal & \stopcon{m} & & & n & & & sin\underline{g} &\\
+			Fricatives & & \stopcon{f} \stopcon{v} & thin/this & s z & sh zh & & &\\
+			Affricatives & & & & & ch, dge, J & & &\\
+			Approximates & w & & & l r & & j & &\\
+			\hline
+		\end{tabular}
+		\begin{tablenotes}
+			\small
+			\item alv means alveolar ridge, red highlights are stop consonants.
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+
+\end{document}
