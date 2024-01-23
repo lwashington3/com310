@@ -3,7 +3,9 @@
 
 % Preamble
 \documentclass[lab=1,title={Speaking rate},turnin=false]{com310lab}
-\usepackage{amsmath}
+
+\newcommand{\wpm}{\mbox{Words per minute} = \frac{\mbox{\# words in speech sample}}{\mbox{duration of speech sample, in seconds}} \times 60 \mbox{ seconds}}
+\newcommand{\sps}{\mbox{Syllables per second} = \frac{\mbox{\# syllables in speech sample}}{\mbox{duration of speech sample, in seconds}}}
 
 % Document
 \begin{document}
@@ -27,8 +29,8 @@
 
 	\begin{equation*}
 	\begin{aligned}
-		&\mbox{Words per minute} = \frac{\mbox{\# words in speech sample}}{\mbox{duration of speech sample, in seconds}} \times 60 \mbox{ seconds}\\
-		&\mbox{Syllables per second} = \frac{\mbox{\# syllables in speech sample}}{\mbox{duration of speech sample, in seconds}}
+		&\wpm\\
+		&\sps
 	\end{aligned}
 	\end{equation*}\\
 
@@ -81,11 +83,10 @@
 \labtitle
 
 \begin{topic}
-	Clearly state the topic that you are investigating.
-	An example would be, ``This lab addresses the way adults talk to pets versus infants.''
+	This lab focuses on comparing different methods of measuring the rate that people talk at.
 \end{topic}
 
-\begin{issue}
+\begin{issue}%TODO: Issue
 	A description of the issue at stake.
 	An issue is the problem that you are attempting to solve.
 	An example would be,
@@ -94,7 +95,7 @@
 	You need only cite relevant information from our lectures, from the textbook, or from the lab instructions itself to motivate your issue, but however you decide to state the issue, be clear to draw out what is at state in addressing it.
 \end{issue}
 
-\begin{hypothesis}
+\begin{hypothesis}%TODO: Hypothesis
 	A statement of the research questions and hypotheses under investigation.
 	A hypothesis is a tentative explanation for an (anticipated) observation of data.
 	An example would be, ``Data were analyzed to address the issue of pet- vs. infant-directed speech.
@@ -105,29 +106,43 @@
 	Don’t go out on a limb and guess at things if you are uncertain.
 \end{hypothesis}
 
-\begin{method}
-	A description of the method.
-	An example would be,
-	``In the lab activity, I recorded x people saying y words to z pets, and then the same x people saying the same words to z infants.
-	Then, I made the following measurements: x, y, and z.''
-	Be specific.
-	Explain what equipment you used, or how data were obtained.
-	Define any measurements.
-	An example would be,
-	``Loud speech was defined as any speech with an average intensity of xxx, and expanded vowel space was defined as cases where [acoustic measures] showed yyy.''
+\begin{method}%TODO: Review Method
+	This lab was conducted by measuring the author speak the following sentences:
+	\begin{table}[H]
+	    \centering
+		\caption{Sentences used for the Lab.}
+		\label{tab:sentences}
+		\begin{tabular}{|c|l|}
+			\hline
+			{\centering\textbf{Sentence ID}} & {\centering\textbf{Sentence}}\\
+			\hline
+			0 & ``Today was busy with preparations.''\\
+			1 & ``Many of the students collected several important statements.''\\
+			2 & ``John gave the book to Mark then put the keys on the chair.''\\
+			3 & ``Sally opened the closet and removed a sweater.''\\
+			4 & ``Fred closed the door and left the room.''\\
+			5 & ``Mary delivered the computer to Susan then handed the papers to the teacher.''\\
+			6 & ``All of the class had lots of things to do.''\\
+			7 & ``Eventually, everyone completed the task they needed to perform.''\\
+			\hline
+		\end{tabular}
+	\end{table}
+	Each sentence was spoken and recorded by the author, and then analyzed using \href{https://www.fon.hum.uva.nl/praat/}{Praat}.
+	The start and end times for each sentence were recorded, so the total amount of time for each sentence could be calculated.
+	From there, the number of words and syllables for each sentence were found using Python and \href{https://rhymebrain.com/api.html}{RhymeBrain}.
+	Using all of the information, the words per minute and syllables per second were calculated using the two following equations:
+	\begin{equation}\wpm\label{eq:wpm}\end{equation}
+	\begin{equation}\sps\label{eq:sps}\end{equation}
+	The results taken from sentences 1--6 had their words per minute graphed against their syllables per second, and grouped depending on if their sentence id was odd or even.
 \end{method}
 
-\begin{results}
-	A description of the results.
-	An example would be,
-	``Results indicated vowel space for pet-directed speech exhibited louder, longer segments, but not a bigger vowel space, consistent with the prediction that such speech is merely loud and not meant to help discriminate among speech sounds.
-	In contrast, infant directed speech did exhibit an expanded vowel space, which I take as evidence as supporting the hypothesis that the special register to infants is for language learning purposes and is acoustically distinct from pet-directed speech.''
-	Provide relevant tables, figures of (minimally) descriptive statistics where relevant.
+\begin{results}%TODO: Results
 
 	\makebox[1 \textwidth][c]{
 		\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1\textwidth}}
 			\begin{threeparttable}
-				\caption{Results from the Lab}
+				\rowcolors{1}{white}{SkyBlue1!50}
+				\caption{Results from the Lab.}
 				\label{tab:data}
 				\include{washington_lab1_table}
 %				\begin{tablenotes}
@@ -146,12 +161,13 @@
 \end{results}
 
 % TODO: Discuss how the even sentences have the same number of syllables as words, whereas the odds don't. For the 1:1 syllable:word ratio sentences, the slope is seems about 1 (use washmath to find the actual slope), whereas the odd sentences vary due to the different rations for each sentence, however, there seems to be a 1:2 ratio of words:syllables, which would track if sentence 3 wasn't an outlier.
-\begin{discussion}
-	A critical analysis of your study.
-	An example would be,
-	``While the study revealed a difference in pet- versus infant-directed speech, it does have some drawbacks.
-	First, I didn't discuss whether infant-directed speech is actually effective in helping infants to discriminate among speech sounds.
-	Moreover, vowel-space isn’t necessarily a strong indicator of an attempt to teach an infant to discriminate among speech sounds in the first place. Rather, an equally plausible explanation could be that adults xxx.''
+\begin{discussion}%TODO: Discussion
+	The graphed results show that there is a relationship between the word per minute and syllables per second of each group.
+	Each of the sentences in the ``even'' group had the same number of syllables and words in each sentence;
+	and the results state that there is a 100\% correlation between the two groups.\\
+
+	There was no strong correlation recorded within the ``odd'' group, however, if the data point for Sentence 3 were removed, then a stronger relationship could be found for the ``odd'' group.
+	According to the data
 \end{discussion}
 
 \end{document}
