@@ -1,0 +1,96 @@
+%! Author = Len Washington III
+%! Date = 1/23/24
+%! compiler = pdflatex
+
+% Preamble
+\documentclass[title={}]{com310notes}
+\usepackage{enumitem}
+\usepackage{tipa}
+\let\ipa\textipa
+\newcommand{\answeripa}[1]{\textcolor{blue}{\ipa{#1}}}
+
+% Packages
+
+% Document
+\begin{document}
+
+\maketitle
+
+\begin{table}[H]
+    \centering
+    \begin{threeparttable}
+		\caption{}
+		\label{tab:ipa-table}
+		\begin{tabular}{l|c|c|c|c|c|c|c|c|}
+			& bilabial & labio-dental & dental & alveolar & paleo-alveolar & palatal & velar & glottal\\
+			\hline
+			nasal (stop) & m & & & n & & & \ipa{N} & \\
+			\hline
+			stop & p b & & & t d & & & k g & ? \\
+			\hline
+			fricative & & f v & \ipa{T} \ipa{D} & s z & \ipa{S}\ \textyogh & & & h\\
+			\hline
+			(cental) approximant & (w) & & & \ipa{\*r} & & j & w & \\
+			\hline
+			lateral (approximant) & & & & l & & & & \\
+		\end{tabular}
+		\begin{tablenotes}
+			\small
+			\item
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{threeparttable}
+		\caption{b\_t}
+		\label{tab:}
+		\begin{tabular}{l  r}
+			beet & /i/\\
+			bit & /I/\\
+			bet & /\ipa{E}/\\
+			bat & /\ipa{\ae}/\\% TODO: Find the combined
+			bought (caught) & /\ipa{O}/\\
+			bot (cot) & /a/\\
+			but & /2/\\
+			abut & /\ipa{@}/\\
+			boot & /\ipa{u}/\\
+			bait & /\ipa{eI}/\\
+			bite & /\ipa{aI}/\\
+			boat & /\ipa{o}/\\
+			book & /\ipa{u}/\\
+			boil & /\ipa{oI}/\\
+			bout & /\ipa{au}/
+		\end{tabular}
+		\begin{tablenotes}
+			\small
+			\item
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+\begin{enumerate}[label=\textbf{\alph*.}]
+    \item touch \answeripa{}
+	\item woman \answeripa{}
+	\item women \answeripa{}
+	\item flood \answeripa{fl2d}
+	\item wrapped \answeripa{\*r\ae{}pt}
+	\item prays \answeripa{p\*reIz}
+	\item brood \answeripa{b\*rud}
+	\item ghoul \answeripa{gul}
+	\item torch \answeripa{to\*rtS}
+	\item stood \answeripa{}
+	\item move \answeripa{muv}
+	\item breathe \answeripa{briD}
+	\item breath \answeripa{brET}
+	\item lose \answeripa{luz}
+	\item loose \answeripa{lus}
+	\item punched \answeripa{p2ntSt}
+\end{enumerate}
+
+\textipa{[DIsIzs@maIpieI]}
+
+\textipa{[Its\*rilijizitutaIp]}
+
+\end{document}
