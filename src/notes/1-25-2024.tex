@@ -1,0 +1,99 @@
+%! Author = Len Washington III
+%! Date = 1/25/24
+%! compiler = pdflatex
+
+% Preamble
+\documentclass[title={}]{com310notes}
+
+% Packages
+\newcommand{\difference}[1]{\textcolor{orange}{#1}}
+
+% Document
+\begin{document}
+
+\maketitle
+
+\begin{table}[H]
+    \centering
+	\caption{Spot the difference}
+	\label{tab:spot-the-difference}
+	\begin{tabular}{|c c c c|l|}
+		\hline
+		\difference{t} & v & g & b & \difference{t is voiced, the rest aren't}\\
+		\ipa{ae} & \difference{o} & i & e & \difference{o is a back vowel}\\
+		f & s & h & \difference{z} & \difference{z is voiced}\\
+		w & \difference{n} & \ipa{\*r} & j & \difference{n is not an approximant}\\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{threeparttable}
+		\caption{}
+		\label{tab:}
+		\begin{tabular}{|c c c c c|}
+			\hline
+			rat & button & top & stop & butter\\
+			\ipa{/\*r\ae{}t/} & \ipa{/b2tIn/} & \ipa{/tap/} & \ipa{/stap/} & \ipa{/b2t@\*r/}\\
+			\ipa{[\*r\ae{}t\textcorner]} & \ipa{[b2PIn]} & \ipa{[t\super h{}ap]} & \ipa{/stap/} & \ipa{[b2R@\*r]}\\
+			unreleased & glottal stop & aspiration & alv & flap\\
+			\hline
+		\end{tabular}
+		\begin{tablenotes}
+			\small
+			\item \ipa{[P]} is a glottal stop, \ipa{[\textcorner]} is an unreleased sound,\ipa{[t\super h] is an aspriation}
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+The phonenic \ipa[/t/] has 5 phonetics:
+\begin{itemize}
+	\item \ipa{[P]}
+	\item \ipa{[t\textcorner]}
+	\item \ipa{[t\super h]}
+	\item \ipa{[R]}
+	\item \ipa{[t]}\\
+\end{itemize}
+
+\ipa{/n/}, matches the place of articulation of the consonant that follows (nasal place assimilation\label{dfn:nasal-place-assimilation})
+\begin{itemize}
+	\item intent \ipa{[n]}
+	\begin{itemize}
+		\item in time
+	\end{itemize}
+	\item input \ipa{[m]}
+	\begin{itemize}
+		\item in place
+	\end{itemize}
+	\item ingrate \ipa{[N]}
+	\begin{itemize}
+		\item in case
+	\end{itemize}
+	\item inform \ipa{[M]}
+	\begin{itemize}
+		\item in fact
+	\end{itemize}
+\end{itemize}
+
+\begin{table}[H] % pg 84-05 do ch3 exercise d
+    \centering
+    \begin{threeparttable}
+		\caption{}
+		\label{tab:}
+		\begin{tabular}{|c c|}
+			\hline
+			keep & cop\\
+			\ipa{/kip/} & \ipa{/kap/}\\
+			\ipa{[c\super h{}ip]} & \ipa{[k\super h{}ap]}\\
+			\hline
+		\end{tabular}
+		\begin{tablenotes}
+			\small
+			\item
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+
+\end{document}

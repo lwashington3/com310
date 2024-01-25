@@ -3,10 +3,8 @@
 %! compiler = pdflatex
 
 % Preamble
-\documentclass[title={}]{com310notes}
+\documentclass[title={IPA}]{com310notes}
 \usepackage{enumitem}
-\usepackage{tipa}
-\let\ipa\textipa
 \newcommand{\answeripa}[1]{\textcolor{blue}{\ipa{#1}}}
 
 % Packages
@@ -24,7 +22,7 @@
 		\begin{tabular}{l|c|c|c|c|c|c|c|c|}
 			& bilabial & labio-dental & dental & alveolar & paleo-alveolar & palatal & velar & glottal\\
 			\hline
-			nasal (stop) & m & & & n & & & \ipa{N} & \\
+			nasal (stop) & m & \ipa{M} & & n & & & \ipa{N} & \\
 			\hline
 			stop & p b & & & t d & & & k g & ? \\
 			\hline
@@ -50,10 +48,10 @@
 			beet & /i/\\
 			bit & /I/\\
 			bet & /\ipa{E}/\\
-			bat & /\ipa{\ae}/\\% TODO: Find the combined
+			bat & /\ipa{\ae}/\\
 			bought (caught) & /\ipa{O}/\\
 			bot (cot) & /a/\\
-			but & /2/\\
+			but & /\ipa{2}/\\
 			abut & /\ipa{@}/\\
 			boot & /\ipa{u}/\\
 			bait & /\ipa{eI}/\\
