@@ -19,20 +19,30 @@
 	\begin{tikzpicture}[scale=1.5]
 		\begin{scope}%\globalnodeset
 			\Large
-			\node (FrontClose) at (-1,0) {\ipa{i $\bullet$ y}};
-			\node (FrontCloseMid) at (1,-1) {\ipa{e $\bullet$ \o}};
-			\node (FrontOpenMid) at (3,-2) {\ipa{E $\bullet$ \oe}};
-			\node (FrontOpen) at (5,-3) {\ipa{a $\bullet$ \OE}};
+			\node (FrontClose) at (-0.5,0) {\ipa{i $\bullet$ y}};
+			\node (FrontCloseMid) at (0.5,-1) {\ipa{e $\bullet$ \o}};
+			\node (FrontOpenMid) at (1.5,-2) {\ipa{E $\bullet$ \oe}};
+			\node (FrontOpen) at (2.5,-3) {\ipa{a $\bullet$ \OE}};
 
-			\node (CentralClose) at (6,0) {\ipa{1 $\bullet$ 0}};
-			\node (CentralCloseMid) at (7,-1) {\ipa{9 $\bullet$ 8}};
-			\node (CentralOpenMid) at (8,-2) {\ipa{3 $\bullet$ \textcloserevepsilon}};
-			\node (CentralOpen) at (9,-3) {};
+			\node (CentralClose) at (3,0) {\ipa{1 $\bullet$ 0}};
+			\node (CentralCloseMid) at (3.5,-1) {\ipa{9 $\bullet$ 8}};
+			\node (CentralOpenMid) at (4,-2) {\ipa{3 $\bullet$ \textcloserevepsilon}};
+			\node (CentralOpen) at (4.5,-3) {};
 
-			\node (BackClose) at (12,0) {\ipa{ $\bullet$ }};
-			\node (BackCloseMid) at (12,-1) {\ipa{ $\bullet$ }};
-			\node (BackOpenMid) at (12,-2) {\ipa{ $\bullet$ }};
-			\node (BackOpen) at (12,-3) {\ipa{ $\bullet$ }};
+			\node (BackClose) at (6,0) {\ipa{W $\bullet$ u}};
+			\node (BackCloseMid) at (6,-1) {\ipa{7 $\bullet$ o}};
+			\node (BackOpenMid) at (6,-2) {\ipa{2 $\bullet$ O}};
+			\node (BackOpen) at (6,-3) {\ipa{A $\bullet$ 6}};
+
+			\node (NearFrontClose) at (0.7, -0.5) {\ipa{I Y}};
+
+			\node (NearFrontOpen) at (1.75, -2.6) {\ipa{\ae}};
+
+			\node (CentralMid) at (3.75,-1.5) {\ipa{@}};
+
+			\node (CentralOpenMidMid) at (4.25,-2.5) {\ipa{5}};
+
+			\node (NearBackClose) at (5.5,-0.5) {\ipa{U}};
 		\end{scope}
 		\begin{scope}%\globalpathset
 			\path (FrontClose) edge (CentralClose);
@@ -44,8 +54,7 @@
 			\path (FrontOpenMid) edge (CentralOpenMid);
 			\path (CentralOpenMid) edge (BackOpenMid);
 
-			\path (FrontOpen) edge (CentralOpen);
-			\path (CentralOpen) edge (BackOpen);
+			\path (FrontOpen) edge (BackOpen);
 
 			\path (FrontClose) edge (FrontCloseMid);
 			\path (FrontCloseMid) edge (FrontOpenMid);
