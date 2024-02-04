@@ -10,10 +10,13 @@
 % Document
 \begin{document}
 
+%<*1-09-2024>
 \maketitle
+\let\olds\s
 \newcommand{\z}[1]{#1 \textcolor{red}{z}}
-\newcommand{\s}[1]{#1 \textcolor{blue}{s}}
+\renewcommand{\s}[1]{#1 \textcolor{blue}{s}}
 \newcommand{\neither}[1]{\textcolor{green}{#1}}
+
 \let\oldt\t
 \let\oldd\d
 \renewcommand{\t}[1]{#1 \textcolor{red}{t}}
@@ -83,5 +86,7 @@ which would end in `iz'.
 
 \let\t\oldt
 \let\d\oldd
+\let\s\olds
+%</1-09-2024>
 
 \end{document}
