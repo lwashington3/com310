@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Notes">
+  <configuration default="false" name="February 15, 2024 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="February Notes">
     <texify>
       <compiler>PDFLATEX</compiler>
       <compiler-path />
@@ -8,7 +8,7 @@
       <viewer-command>pdfopener</viewer-command>
       <compiler-arguments />
       <envs />
-      <main-file>$PROJECT_DIR$/src/notes/notes.tex</main-file>
+      <main-file>$PROJECT_DIR$/src/notes/2-15-2024.tex</main-file>
       <output-path>$PROJECT_DIR$/out/notes</output-path>
       <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
       <compile-twice>false</compile-twice>
