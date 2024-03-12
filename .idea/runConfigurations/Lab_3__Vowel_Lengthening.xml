@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="February 15, 2024 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="February Notes">
+  <configuration default="false" name="Lab 3: Vowel Lengthening" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Labs">
     <texify>
       <compiler>PDFLATEX</compiler>
       <compiler-path />
@@ -8,12 +8,12 @@
       <viewer-command>pdfopener</viewer-command>
       <compiler-arguments />
       <envs />
-      <main-file>$PROJECT_DIR$/src/notes/2-15-2024.tex</main-file>
-      <output-path>$PROJECT_DIR$/out/notes</output-path>
-      <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+      <main-file>$PROJECT_DIR$/src/labs/lab3/washington-lab3.tex</main-file>
+      <output-path>$PROJECT_DIR$/out/labs</output-path>
+      <auxil-path>$PROJECT_DIR$/auxil/labs</auxil-path>
       <compile-twice>false</compile-twice>
       <output-format>PDF</output-format>
-      <latex-distribution>MIKTEX</latex-distribution>
+      <latex-distribution>TEXLIVE</latex-distribution>
       <has-been-run>true</has-been-run>
       <bib-run-config>[]</bib-run-config>
       <makeindex-run-config>[]</makeindex-run-config>

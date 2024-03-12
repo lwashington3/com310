@@ -1,4 +1,5 @@
 auxil/**/*.run.xml
+out/**/*.run.xml
 .fuse_hidden*
 
 ### TeX template
