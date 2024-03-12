@@ -8,7 +8,7 @@
       <viewer-command>pdfopener</viewer-command>
       <compiler-arguments />
       <envs />
-      <main-file>$PROJECT_DIR$/src/labs/lab3/washington-lab3.tex</main-file>
+      <main-file>$PROJECT_DIR$/src/labs/lab3_vowel_lengthening/washington-lab3.tex</main-file>
       <output-path>$PROJECT_DIR$/out/labs</output-path>
       <auxil-path>$PROJECT_DIR$/auxil/labs</auxil-path>
       <compile-twice>false</compile-twice>
