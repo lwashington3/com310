@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Lab 3: Vowel Lengthening" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Labs">
+  <configuration default="false" name="Lab 4: Phonetics of toddler speech" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Labs">
     <texify>
       <compiler>PDFLATEX</compiler>
       <compiler-path />
@@ -8,10 +8,10 @@
       <viewer-command>pdfopener</viewer-command>
       <compiler-arguments />
       <envs />
-      <main-file>$PROJECT_DIR$/src/labs/lab3_vowel_lengthening/washington-lab3.tex</main-file>
+      <main-file>$PROJECT_DIR$/src/labs/lab4_toddler_speech/washington-lab4.tex</main-file>
       <output-path>$PROJECT_DIR$/out/labs</output-path>
       <auxil-path>$PROJECT_DIR$/auxil/labs</auxil-path>
-      <compile-twice>true</compile-twice>
+      <compile-twice>false</compile-twice>
       <output-format>PDF</output-format>
       <latex-distribution>MIKTEX</latex-distribution>
       <has-been-run>true</has-been-run>
